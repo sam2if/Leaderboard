@@ -1,11 +1,6 @@
 import _ from 'lodash';
-function component() {
-    const element = document.createElement('div');
-  
-      // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+import './style.css';
+import { added } from './module/add.js';
+
+const add = document.querySelector('.add');
+add.addEventListener('click', added);
