@@ -113,7 +113,6 @@ GitHub pages
 
 - [ ] **I will modify the style.css with more interesting background and styling**
 - [ ] **I will add animation in to javascript code to add some function to buttons**
-- [ ] **I will add some emojis to make it very simple**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
