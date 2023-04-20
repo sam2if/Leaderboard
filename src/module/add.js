@@ -11,18 +11,19 @@ class Scores {
   }
 }
 
-let order = () => {
+const order = () => {
   fetch('https://jsonplaceholder.typicode.com/todos/1')
-  .then(response => response.json())
-  .then(json => console.log(json.title))};
+    .then((response) => response.json())
+    .then((json) => console.log(json.title));
+};
 
-let display = (player) =>{
+const display = (player) => {
   const lists = document.createElement('div');
   lists.innerHTML = `<li class="disboards">${player}:</li>`;
   scoreList.appendChild(lists);
-}
+};
 
-let added = () => {
+const added = () => {
   const player = new Scores(names, scores);
   if (names.value === '' || scores.value === '') {
     alert('input name and scores');
@@ -32,6 +33,6 @@ let added = () => {
     names.value = '';
     scores.value = '';
   }
-}
+};
 
 export { added, players };
