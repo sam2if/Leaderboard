@@ -11,19 +11,24 @@ class Scores {
   }
 }
 
-function display(player) {
+let order = () => {
+  fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log(json.title))};
+
+let display = (player) =>{
   const lists = document.createElement('div');
-  lists.innerHTML = `<li class="disboards">${player.name}: ${player.score}</li>`;
+  lists.innerHTML = `<li class="disboards">${player}:</li>`;
   scoreList.appendChild(lists);
 }
 
-function added() {
+let added = () => {
   const player = new Scores(names, scores);
   if (names.value === '' || scores.value === '') {
     alert('input name and scores');
   } else {
     players.push(player);
-    display(player);
+    display(order);
     names.value = '';
     scores.value = '';
   }

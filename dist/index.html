@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
-<script defer src="main.js"></script></head>
-<body>
-    <h1>Leaderboard</h1>
-    <div class="board">
-        <div class="recscores">
-            <div class="scores">
-                <div class="top">
-                    <h2>Recent Scores</h2>
-                    <button class="refresh">Refresh</button>
-                </div>
-                <div class="bottom">
-                    <ul class="score-list">
-                        
-                    </ul>
 
-                </div>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+<script defer src="main.js"></script></head>
+
+<body>
+  <main id="lb-main">
+    <h1>Leaderboard</h1>
+
+    <div class="structure">
+      <section class="scores-section">
+        <div class="recent-scores">
+          <h2>Recent Scores</h2>
+          <button type="submit" id="refresh">Refresh</button>
         </div>
-        <div class="addscores">
-            <div class="adding">
-                <h2>Add your score</h2><br><br>
-                <input class="name" type="text" placeholder="your name"><br><br>
-                <input class="score" type="text" placeholder="your score"><br><br>
-                <button class="add">submit</button>
-            </div>
-        </div>
+
+        
+          <ul id="table">
+            
+          </ul>
+      </section>
+
+      <section id="form-section">
+        <h2>Add Your Score</h2>
+
+        <form id="form">
+          <input type="text" placeholder="Your name" id="name">
+          <input type="number" placeholder="Your score" id="score">
+          <span id="error-msg">Kindly Complete Both Fields!</span>
+          <button type="submit" id="btn">Submit</button>
+        </form>
+      </section>
     </div>
+  </main>
 </body>
+
 </html>
